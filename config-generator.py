@@ -397,6 +397,7 @@ def get_img_host(
         "ptscreens": "ptscreens_api",
         "onlyimage": "onlyimage_api",
         "dalexni": "dalexni_api",
+        "lostimg": "lostimg_api",
         "ziplinestudio": ["zipline_url", "zipline_api_key"],
         "passtheimage": "passtheima_ge_api",
         "seedpool_cdn": "seedpool_cdn_api",

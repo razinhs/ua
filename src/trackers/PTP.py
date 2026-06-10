@@ -493,6 +493,7 @@ class PTP:
             'onlyimage': ('onlyimage.org',),
             'ptpimg': ('ptpimg.me',),
             'ptscreens': ('ptscreens.com',),
+            'lostimg': ('lostimg.cc',),
             'passtheimage': ('passtheima.ge',),
             'seedpool_cdn': ('cdn.seedpool.org',),
             'utppm': ('utp.pm',),

@@ -200,6 +200,7 @@ const imageHostApiKeys = {
   ptpimg: ['ptpimg_api'],
   lensdump: ['lensdump_api'],
   ptscreens: ['ptscreens_api'],
+  lostimg: ['lostimg_api'],
   onlyimage: ['onlyimage_api'],
   dalexni: ['dalexni_api'],
   passtheimage: ['passtheima_ge_api'],
