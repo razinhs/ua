@@ -278,7 +278,8 @@ const trackerNameMap = {
   'ULCX': 'ULCX',
   'UTP': 'UTOPIA',
   'YOINK': 'YOiNKED',
-  'YUS': 'YUSCENE'
+  'YUS': 'YUSCENE',
+  'ZNTH': 'Zenith'
 };
 
 const getTrackerDisplayName = (acronym) => {
