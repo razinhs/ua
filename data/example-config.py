@@ -231,6 +231,10 @@ config = {
         # Can be overridden in a per-tracker setting by adding this same config
         "disc_menu_header": "",
 
+        # Set False to disable the automatic Upload Assistant signature on UNIT3D descriptions
+        # Can be overridden in a per-tracker setting by adding this same config
+        "show_ua_signature": True,
+
         # Allows adding a custom signature, in BBCode, at the bottom of the description section
         # Can be overridden in a per-tracker setting by adding this same config
         "custom_signature": "",

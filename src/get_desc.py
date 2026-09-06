@@ -632,11 +632,22 @@ class DescriptionBuilder:
         desc_parts.append(await self.get_custom_signature())
 
         # UA Signature
-        if not signature:
-            signature = f"[right][url=https://github.com/Audionut/Upload-Assistant][size=4]{meta['ua_signature']}[/size][/url][/right]"
+        show_ua_signature = self.tracker_config.get(
+            "show_ua_signature",
+            self.config["DEFAULT"].get("show_ua_signature", True),
+        )
+        if signature:
+            # Preserve a signature explicitly supplied by a tracker implementation.
+            desc_parts.append(signature)
+        elif show_ua_signature:
+            # Add Upload Assistant's automatic signature only when enabled.
+            signature = (
+                f"[right][url=https://github.com/Audionut/Upload-Assistant]"
+                f"[size=4]{meta['ua_signature']}[/size][/url][/right]"
+            )
             if self.tracker == "HUNO":
                 signature = signature.replace("[size=4]", "[size=8]")
-        desc_parts.append(signature)
+            desc_parts.append(signature)
 
         description: str = "\n".join(
             part for part in desc_parts

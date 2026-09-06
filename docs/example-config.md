@@ -140,6 +140,7 @@ These can be [overridden per-tracker](#tracker-overridable-settings) by adding t
 - `custom_description_header` (str): BBCode header added at top of description section.
 - `screenshot_header` (str): BBCode header added above screenshots.
 - `disc_menu_header` (str): BBCode header added above disc menu screenshots (discs only).
+- `show_ua_signature` (bool): Show the automatic Upload Assistant signature on UNIT3D descriptions. Defaults to `True`.
 - `custom_signature` (str): BBCode signature appended at bottom of description.
 
 ### Torrent client integration
